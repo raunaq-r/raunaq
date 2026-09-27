@@ -55,22 +55,22 @@ Replace sdX in the following instructions with the device name for the SD card a
   ```
 12. Update
     `pacman -Syu`
-14. Install sudo, nano, networkmanager
+13. Install sudo, nano, networkmanager
     ```
-    paceman -S nano
+    pacman -S nano
     pacman -S sudo
     pacman -S networkmanager
     ```
-16. Create hostname
+14. Create hostname
     `hostnamectl set-hostname <pi>`
-17. Reboot: `reboot`
-18. Shutdown: `systemctl poweroff`
-19. Diskspace: `df -h`
-20. Connect to WiFi
+15. Reboot: `reboot`
+16. Shutdown: `systemctl poweroff`
+17. Diskspace: `df -h`
+18. Connect to WiFi
     ```
     systemctl enable --now NetworkManager
     nmcli device
     nmcli device wifi list
     nmcli device wifi connect "WifiName" password "WifiPassword"
-    nuclei conne cation show --active
+    nmcli connection show --active
     ```
